@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importa js do painél de info sobre o empregado -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Prova - Site Responsivo</title>
+  
+  <!-- O cabeçalho é dividido em duas partes, cabeçalho superior e inferior -->
+  <header>
+
+  <!-- Começa cabeçalho superior -->
+    <div id="headerTop">
+    <div id="logoBar">
+      <a href="index.html"><img id="logo" src="components/logotype white"/></a>
+    </div>
+      <nav class="btnList1">
+        <img id="btEntrar" src="components/btn entrar">
+        <img id="btCadastrar" src="components/btn cadastrar">
+      </nav>
+      <div id="empData">
+        <div id="empPic"><img src="components/pic profile"></div>
+        <div id="empInfo">
+          <span id="empName"><h1>Tomaz Chavez</h1></span>
+          <span id="empOAB"><h1>OAB/MG 123456</h1></span>
+          <span id="empLoc"><font color="rgb(41,48,51)"><b>Belo Horizonte</b></font> e mais 7 cidades<br/>Av. do Contorno, 2905 - Santa Efigênia</span>
+          </div>
+        </div>
+      </div>
+  <!-- Termina cabeçalho superior -->
+  
+  <!-- Começa a barra fixa quando ocorre rolagem -->
+  <div class="nav-container">
+<div class="nav">
+    <div class="contentNav">
+      <img id="empImageBar" src="components/pic profile mini"><span id="empNameBar"><h1>Tomaz Chavez</h1></span><span id="empOAB"><h1>OAB/MG 123456</h1></span>
+      <span id="btnBar">
+        <img id="imgSolicitar" src="components/btn solicitar"><img  id="imgRecomendar" src="components/btn recomendar">
+      </span>
+    </div>
+    <div class="clear"></div>
+</div>
+</div>
+  <!-- Termina barra fixa -->
+
+  <!-- Começa cabeçalho inferior -->
+      <div id="headerBottom">
+        <nav class="btnList2">
+          <img id="imgSolicitar" src="components/btn solicitar">
+          <img  id="imgRecomendar" src="components/btn recomendar">
+        </nav>
+    </div>
+  <!-- Termina cabeçalho inferior -->
+  
+  <!-- Inclui js do painél sobre, áreas de atuação e serviços -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="painel.js"></script>
+  <!-- Inclui js barra fixa de user -->
+  <script type="text/javascript" src="barraUser.js"></script>
+  </header>
+  </head>
+
+  <!-- O corpo é dividido em duas colunas -->
+  <body>
+    <!-- Inicia a coluna da esquerda -->
+    <div class="leftCol">
+      
+      <!-- O painél -->
+      <div class="empInfoWidget">
+        <div class="widgetTitle">
+          <ul class="abas">
+            <li><a href="#sobre"><h4>Sobre</h4></a></li>
+            <li><a href="#areas"><h4>Áreas de Atuação</h4></a></li>
+            <li><a href="#servicos"><h4>Serviços Prestados</h4></a></li>
+          </ul>
+        </div>
+
+    <div id="noticia"></div>
+      <div id="conteudo">
+        <div id="sobre">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae semper nisl, quis facilisis nulla. Pellentesque hendrerit orci ligula, vitae vulputate lectus porta at. Aliquam sit amet efficitur erat. Ut ac mauris in tellus vehicula fringilla. Nullam vestibulum, lorem non varius dictum, lorem justo rhoncus arcu, ac aliquam est nulla sed magna. Etiam nec velit a justo dignissim consequat ut ac nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse ut aliquam lorem. Sed lobortis mollis nisl, vel vulputate nisl interdum vitae. Suspendisse convallis volutpat iaculis. Duis non odio eget libero interdum posuere sed et tellus. Maecenas vitae massa lacinia, ornare diam in, gravida nulla. Maecenas imperdiet aliquet arcu, id facilisis nisl rhoncus id. Duis diam elit, placerat et felis nec, sodales eleifend elit.</p>
+        </div>
+
+        <div id="areas">
+          <p></p>
+        </div>
+
+      <div id="servicos">
+        <p>Donec non tellus in magna aliquam pharetra. In tempor sodales consequat. In rutrum accumsan neque. Cras fermentum laoreet accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id maximus nulla, in tincidunt augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nec placerat nulla. Suspendisse maximus felis ut magna scelerisque blandit. Praesent finibus pellentesque porta. Morbi lacus massa, laoreet eget arcu a, molestie suscipit ipsum. Mauris tincidunt, tortor ac faucibus sollicitudin, libero lectus fermentum massa, non pretium metus dolor id sapien. Duis vel imperdiet erat, sit amet sollicitudin nisi.</p>
+      </div>
+      </div>
+      </div>
+      <!-- Fim Painél -->
+
+      <div id="mapWidget">
+        <div class="widgetTitle">
+        <h4>Cidades Atendidas</h4>
+        </div>
+        <div id="map"><img src="components/map"/></div>
+      </div>
+
+      </div>
+    <!-- Inicia a coluna da direita -->
+    <div class="rightCol">
+      <div class="recomWidget">
+        <div class="widgetTitle">
+          <h2>Recomendações</h2>
+        </div>
+        <div class="dialog">
+          <img id="miniPhotoQuest" src="components/pic profile coment">
+          <h3 id="recomName">Julio Cezar</h3>
+          <div class="dialogDetail">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae semper nisl, quis facilisis nulla. Pellentesque hendrerit orci ligula, vitae vulputate lectus porta at. Aliquam sit amet efficitur erat. Ut ac mauris in tellus vehicula fringilla. Nullam vestibulum, lorem non varius dictum, lorem justo rhoncus arcu, ac aliquam est nulla sed magna.
+            <br>
+            <br>
+            <img id="miniPhotoAnsw" src="components/pic profile mini">
+            <div id="recomAnswer">
+              <span id="resp">Resposta de <b>Tomaz Chavez</b></span><br>
+              Obrigado.
+            </div>
+          </div>
+        </div>
+      </div><div class="recomWidget">
+        
+      <div class="dialog">
+        <img id="miniPhotoQuest" src="components/pic profile coment">
+        <h3 id="recomName">Julio Cezar</h3>
+        <div class="dialogDetail">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae semper nisl, quis facilisis nulla. Pellentesque hendrerit orci ligula, vitae vulputate lectus porta at. Aliquam sit amet efficitur erat. Ut ac mauris in tellus vehicula fringilla. Nullam vestibulum, lorem non varius dictum, lorem justo rhoncus arcu, ac aliquam est nulla sed magna.
+          <br>
+          <br>
+          <img id="miniPhotoAnsw" src="components/pic profile mini">
+          <div id="recomAnswer">
+            Resposta de <b>Tomaz Chavez</b><br>
+            Obrigado.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recomWidget">
+          
+          <div class="dialog">
+            <img id="miniPhotoQuest" src="components/pic profile coment">
+            <h3 id="recomName">Julio Cezar</h3>
+            <div class="dialogDetail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae semper nisl, quis facilisis nulla. Pellentesque hendrerit orci ligula, vitae vulputate lectus porta at. Aliquam sit amet efficitur erat. Ut ac mauris in tellus vehicula fringilla. Nullam vestibulum, lorem non varius dictum, lorem justo rhoncus arcu, ac aliquam est nulla sed magna.
+              <br>
+              <br>
+              <img id="miniPhotoAnsw" src="components/pic profile mini">
+              <div id="recomAnswer">
+                Resposta de <b>Tomaz Chavez</b><br>
+                Obrigado.
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,595 @@
+html {
+    font-family: Segoe UI, Arial, Sans-Serif;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+/* Estilos Barra Fixa */
+.nav-container {
+    background-color: white; display: none;
+}
+
+.f-nav {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 7em;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.nav {
+    height: 100%;
+    white-space: nowrap;
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    float: left; margin-top: 6px; padding: 6px; border-right: 1px solid #ACACAC;
+}
+    .nav ul li:first-child{
+        padding-left: 0;
+}
+
+.nav ul li a { }
+
+.nav ul li a:hover {
+    text-decoration: underline
+}
+
+.contentNav {
+    padding: 0.5em 4em;
+    height: 100%;
+}
+
+#empImageBar {
+    float: left;
+}
+
+.contentNav #empNameBar {
+    display: table;
+}
+
+.contentNav #empNameBar h1 {
+    position: relative;
+    color: black;
+    margin: 0;
+    padding-left: 1.8em;
+}
+
+.contentNav #empOAB {
+    display: table;
+    position: relative;
+    bottom: 5em;
+    left: 28.5em;
+}
+
+.contentNav #empOAB h1{
+    font-size: 2em;
+    color: rgb(102,119,128);
+}
+
+span#btnBar {
+    float: right;
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    bottom: 9.8em;
+    position: relative;
+
+}
+
+/* Termina Estilos Barra Fixa */
+
+body {
+	font-size: 62.5%;
+    margin: 0;
+    max-width: 100%;
+    background-color: aliceblue;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 100;
+    color: white;
+}
+
+body h2 {
+    font-family: "Open Sans";
+    color: rgb(61,71,77);
+    font-weight: lighter;
+    font-size: 2.3em;
+}
+
+body h4 {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgb(112,128,136);
+    font-weight: 800;
+}
+
+header {
+    margin: 0 0 auto 0;
+    width: 100%;
+    height: 22em;
+    background-color: white;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#empPic img {
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    -goog-ms-border-radius:15px;
+}
+header #headerTop {
+	width: 100%;
+    height: 70%;
+    background-color: rgb(41,48,51);
+}
+
+nav.btnList1 img{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    goog-ms-border-radius: 0;
+}
+
+header #headerBottom {
+    width: 100%;
+    height: 30%;
+}
+
+#logoBar {
+    display: inline;
+}
+
+img#logo {
+    display: inline;
+    margin: auto;
+    padding: 1em;
+    margin-left: 2.6em;
+}
+
+nav.btnList1 {
+    display: inline;
+    float: right;
+    padding: 1em;
+    margin: 1em;
+    margin-right: 5em;
+}
+
+nav.btnList2 {
+    margin: 0.7%;
+    margin-right: 5.5em;
+    float: right;
+    display: inline-flex;
+    width: auto;
+    height: auto;
+}
+
+img#btEntrar {
+    margin: auto 1em auto auto;
+}
+
+#empData {
+    position: relative;
+    display: flex;
+    padding: 4.3em 0 1em 1em;
+    margin-left: 1.8%;
+    width: 95%;
+    height: 60%;
+}
+
+img#imgSolicitar {
+    display: inline-table;
+    margin-right: 3%;
+}
+
+img#imgRecomendar {
+    display: inline-table;
+}
+
+#empInfo {
+    position: relative;
+    display: table;
+    width: 31%;
+    height: 8em;
+    margin: 0em;
+    padding-left: 2em;
+    white-space: nowrap;
+}
+
+
+#empPic {
+    position: relative;
+    bottom: 3em
+}
+
+#empName {
+    display: table;
+    position: relative;
+    bottom: 4em;
+    right: 3%;
+}
+
+#empName h1 {
+    margin: 0.5em;
+}
+
+#empOAB{
+    display: table;
+    position: relative;
+    bottom: 10.7em;
+    left: 22em;
+    padding: 0.5em;
+}
+
+#empOAB h1 {
+    font-size: 2em;
+    color: rgb(163,190,204);
+}
+
+#empLoc {
+    display: table;
+    color: rgb(102,120,128);
+    position: relative;
+    bottom: 7.5em;
+    font-size: 1.3em;
+    right: 0.1em;
+}
+
+.leftCol {
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: left;
+    width: 43%;
+    height: 100%;
+}
+
+.rightCol {
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+}
+
+/* Estilos do painél */
+.empInfoWidget {
+    display: table;
+    float: inherit;
+    width: 100%;
+    height: 35em;
+    left: 5.0em;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: rgb(218,226,230);
+}
+
+div#noticia {
+    display: table;
+    top: 4em;
+    left: 2em;
+    height: 100%;
+    width: auto;
+    padding: 1em 2em;
+    font-size: 1.5em;
+    color: rgb(102,119,128);
+}
+
+.widgetTitle {
+    display: table;
+    float: left;
+    width: 98%;
+    height: auto;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 1.2em;
+    padding-left: 1.2em;
+}
+
+.widgetTitle ul {
+    display: table;
+    padding-left: 0;
+    position: relative;
+    float: inherit;
+    margin: 0;
+}
+
+ul .widgetTitle {
+ }   
+
+.widgetTitle ul li {
+    list-style: none;
+    display: inline;
+}
+
+.widgetTitle ul li a {
+    float: left;
+    width: auto;
+    color: grey;
+    text-align: center;
+    padding: 0 3em;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.widgetTitle ul a:hover{
+    text-decoration: underline;
+}
+
+#conteudo {
+    display: table;
+    margin: auto 2em;0
+}
+
+/* Fim Estilos Painél */
+
+/* Estilo API Google Maps */
+
+div#mapWidget {
+    display: table;
+    float: inherit;
+    width: 100%;
+    height: 16em;
+    left: 5.0em;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.1em;
+    margin: 1em auto;
+    border-color: rgb(218,226,230);
+}
+
+div#map img {
+    width: 100%;
+}
+
+#mapWidget .widgetTitle {
+    width: 89%;
+    padding-left: 3em;
+}
+
+/* Estilo Widget Recomendações */
+.recomWidget .widgetTitle {
+    padding-left: 0;
+    border-bottom: 0;
+}
+.recomWidget {
+    display: table;
+    float: inherit;
+    width: 95%;
+    height: 16em;
+    left: 5.0em;
+    margin-right: 5%;
+}
+
+.recomWidget .widgetTitle h2{
+    padding-left: 0;
+}
+
+img#miniPhotoQuest {
+    float: left;
+}
+
+img#miniPhotoAnsw {
+    display: table;
+    float: left;
+    margin-right: 1em;
+}
+
+.dialog {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+h3#recomName {
+    position: relative;margin-left: 3.7em;
+    font-size: 2em;
+    bottom: 0.7em;
+    color: rgb(41,48,51);
+}
+
+div.dialogDetail {
+    display: table;
+    position: relative;
+    left: 5em;
+    width: 90%;
+    height: auto;
+    bottom: 2em;
+    font-size: 1.5em;
+    color: rgb(102,119,128);
+    border-bottom: 1px solid #E0E0E0;
+}
+
+div#recomAnswer{
+    display: table;
+}
+span#resp {
+    color: black;
+}
+
+/* Media Queries */
+@media screen and (max-width: 950px){
+    .leftCol {
+        float: none;
+        margin: 0 auto;
+        margin-top: 2%;
+        width: 95%;
+    }
+
+    .rightCol {
+        float: none;
+        margin: 0 auto;
+        margin-top: 2%;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 860px){
+
+    #empLoc {
+        display: none;
+    }
+
+    nav.btnList2 {
+    margin: 0.7%;
+    margin-left: 16em;
+    float: left;
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    }
+}
+
+@media screen and (max-width: 760px){
+	nav.btnList1 {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 640px){
+    nav.btnList1{
+        margin: 0;
+        margin-right: 0;
+    }
+
+    #empData{
+        top: 10%;
+    }
+
+    header h1 {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 565px){
+    span#empOAB {
+        display: none;
+    }   
+}
+@media screen and (max-width: 530px){
+
+    header {
+        height: 26.5em;
+    }
+
+    header #headerTop {
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(41,48,51);
+    }
+
+    header #headerBottom {
+        text-align: center;
+        height: 40%;
+    }
+
+    #logoBar {
+        width: 100%;
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    img#logo {
+        display: inline;
+        margin: 0 auto;
+    }
+
+    nav.btnList1 {
+        text-align: center;
+        display: inline;
+        padding: 0em;
+        margin: 0em;
+        width: 100%;
+    }
+
+    nav.btnList2 {
+        margin: 1.5%;
+        margin-left: 13em;
+        float: left;
+        display: table;
+        width: auto;
+        height: auto;
+    }
+
+    #empData {
+        top: 10%;
+    }
+
+    #empInfo {
+        bottom: 3em;
+    }
+
+    #empName {
+        bottom: 5em;
+    }
+
+    ul .widgetTitle {
+        right: 16%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    #empData {
+        top: 6%;
+    }
+
+    #empInfo {
+        padding-left: 1em;
+        bottom: 0;
+        width: 0;
+    }
+
+    #empLoc {
+        white-space: normal;
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 390px){
+    body h4 {
+        font-size: 1em;
+    }
+    header {
+        height: 28em;
+    }
+
+    #empInfo {
+        padding: 1em;
+        width: auto;
+    }
+
+    div.dialogDetail{
+        width: 80%;
+    }
+
+    #mapWidget .widgetTitle {
+        width: 89%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    img#imgSolicitar {
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+    }
+    nav.btnList2 {
+        margin: 1.5%;
+    }
+}
